@@ -1,0 +1,893 @@
+CRITICAL - 2024-11-10 05:29:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\AuthController.php(30): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 05:34:08 --> Error: Undefined constant "App\Controllers\data"
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+INFO - 2024-11-10 05:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 05:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 05:39:35 --> ParseError: syntax error, unexpected string content "dashboard)"
+[Method: GET, Route: login]
+in APPPATH\Controllers\AuthController.php on line 58.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AuthController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+INFO - 2024-11-10 05:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-10 05:57:53 --> mysqli_sql_exception: Table 'admin' already exists in C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `a...', 0)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `a...')
+#2 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `a...')
+#3 C:\xampp_new\htdocs\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `a...')
+#4 C:\xampp_new\htdocs\codeigniter4\app\Database\Migrations\2024-11-10-013057_admin.php(52): CodeIgniter\Database\Forge->createTable('admin')
+#5 C:\xampp_new\htdocs\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\AdminTable->up()
+#6 C:\xampp_new\htdocs\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp_new\htdocs\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp_new\htdocs\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp_new\htdocs\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp_new\htdocs\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-11-10 06:11:32 --> ErrorException: Undefined variable $memberModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 54.
+ 1 APPPATH\Controllers\AuthController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $memberModel', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:11:56 --> Error: Undefined constant "App\Controllers\memberData"
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:14:51 --> ErrorException: Undefined variable $username
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 33.
+ 1 APPPATH\Controllers\AuthController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $username', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:15:19 --> ErrorException: Undefined variable $username
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 33.
+ 1 APPPATH\Controllers\AuthController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $username', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:15:45 --> ErrorException: Undefined variable $username
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 33.
+ 1 APPPATH\Controllers\AuthController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $username', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 06:16:36 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp_new\htdocs\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp_new\htdocs\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp_new\htdocs\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->register()
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#15 {main}
+CRITICAL - 2024-11-10 06:16:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(43): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:16:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Qd/zPXFlmpgNg45hOfFcAuiq9xLWd4zL0546nsccfa2NWCyEJp2bW\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Qd/zPXFlmpgNg45hOfFcAuiq9xLWd4zL0546nsccfa2NWCyEJp2bW\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(43): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:16:36 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Qd/zPXFlmpgNg45hOfFcAuiq9xLWd4zL0546nsccfa2NWCyEJp2bW\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Qd/zPXFlmpgNg45hOfFcAuiq9xLWd4zL0546nsccfa2NWCyEJp2bW\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Qd/zPXFlmpgNg45hOfFcAuiq9xLWd4zL0546nsccfa2NWCyEJp2bW\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(43): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 06:17:46 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp_new\htdocs\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp_new\htdocs\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp_new\htdocs\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->register()
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#15 {main}
+CRITICAL - 2024-11-10 06:17:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(45): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:17:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Xyb/QO./OYHK84s3Oge9n.AibEbMQStBhth1ubRwsRZfo9TkPpcNC\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Xyb/QO./OYHK84s3Oge9n.AibEbMQStBhth1ubRwsRZfo9TkPpcNC\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(45): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 06:17:46 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Xyb/QO./OYHK84s3Oge9n.AibEbMQStBhth1ubRwsRZfo9TkPpcNC\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Xyb/QO./OYHK84s3Oge9n.AibEbMQStBhth1ubRwsRZfo9TkPpcNC\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (NULL, \'yan@gmail.com\', \'$2y$10$Xyb/QO./OYHK84s3Oge9n.AibEbMQStBhth1ubRwsRZfo9TkPpcNC\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`) VALUES (:name:, :email:, :password:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(45): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+INFO - 2024-11-10 06:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 06:43:25 --> Error: Undefined constant "App\Controllers\membership_duration"
+[Method: POST, Route: register]
+in APPPATH\Controllers\AuthController.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+INFO - 2024-11-10 06:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 06:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-10 07:03:38 --> email: yan@gmail.com
+DEBUG - 2024-11-10 07:03:38 --> password: 12345
+DEBUG - 2024-11-10 07:03:38 --> User: Array
+(
+    [id] => 1
+    [name] => Banchaita
+    [email] => yan@gmail.com
+    [password] => $2y$10$gtrEz9XzpjD6Uoh/R9fopOK3g8vSmc/NUywVNY8aECGWSWHrBlHRm
+    [membership_duration] => 6 months
+    [start_date] => 2024-11-10
+    [expiration_date] => 2025-05-10
+)
+
+INFO - 2024-11-10 07:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 07:49:13 --> Error: Call to undefined function link_tag()
+[Method: GET, Route: login]
+in APPPATH\Views\login.php on line 10.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(85): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 07:49:17 --> Error: Call to undefined function link_tag()
+[Method: GET, Route: login]
+in APPPATH\Views\login.php on line 10.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(85): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 07:50:17 --> Error: Call to undefined function link_tag()
+[Method: GET, Route: login]
+in APPPATH\Views\login.php on line 10.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(85): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 07:58:03 --> mysqli_sql_exception: Column 'name' cannot be null in C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_new\htdocs\codeigniter4\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp_new\htdocs\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp_new\htdocs\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp_new\htdocs\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp_new\htdocs\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->register()
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#15 {main}
+CRITICAL - 2024-11-10 07:58:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (:name:, :email:, :password:, :membership_duration:, :start_date:, :expiration_date:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 07:58:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (NULL, \'banchaita@gmail.com\', \'$2y$10$K9C4pa3zKcj.T74/eD6WDuG6b6aw.V.zo6X0OkPoNsoTtXGRjJPYm\', \'6 months\', \'2024-11-10\', \'2025-05-10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (NULL, \'banchaita@gmail.com\', \'$2y$10$K9C4pa3zKcj.T74/eD6WDuG6b6aw.V.zo6X0OkPoNsoTtXGRjJPYm\', \'6 months\', \'2024-11-10\', \'2025-05-10\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (:name:, :email:, :password:, :membership_duration:, :start_date:, :expiration_date:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(66): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 07:58:03 --> [Caused by] mysqli_sql_exception: Column 'name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (NULL, \'banchaita@gmail.com\', \'$2y$10$K9C4pa3zKcj.T74/eD6WDuG6b6aw.V.zo6X0OkPoNsoTtXGRjJPYm\', \'6 months\', \'2024-11-10\', \'2025-05-10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (NULL, \'banchaita@gmail.com\', \'$2y$10$K9C4pa3zKcj.T74/eD6WDuG6b6aw.V.zo6X0OkPoNsoTtXGRjJPYm\', \'6 months\', \'2024-11-10\', \'2025-05-10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (NULL, \'banchaita@gmail.com\', \'$2y$10$K9C4pa3zKcj.T74/eD6WDuG6b6aw.V.zo6X0OkPoNsoTtXGRjJPYm\', \'6 months\', \'2024-11-10\', \'2025-05-10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `membership_duration`, `start_date`, `expiration_date`) VALUES (:name:, :email:, :password:, :membership_duration:, :start_date:, :expiration_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(66): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->register()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+INFO - 2024-11-10 07:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-11-10 08:02:32 --> email: banchaita@gmail.com
+DEBUG - 2024-11-10 08:02:32 --> password: 123456
+DEBUG - 2024-11-10 08:02:32 --> User: Array
+(
+    [id] => 1
+    [name] => banchaita
+    [email] => banchaita@gmail.com
+    [password] => $2y$10$9o79MirJwNp52S9iBw4bX.TAkUakMJko0LVyZDnY4WVfMNC4.AUn2
+    [membership_duration] => 6 months
+    [start_date] => 2024-11-10
+    [expiration_date] => 2025-05-10
+)
+
+INFO - 2024-11-10 08:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 09:06:53 --> ErrorException: Undefined variable $UserModel
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\AuthController.php on line 125.
+ 1 APPPATH\Controllers\AuthController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $UserModel', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Controllers\\AuthController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 09:12:50 --> ErrorException: Undefined variable $products
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 85.
+ 1 APPPATH\Views\dashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php', 85)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AuthController.php(128): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 09:13:28 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 89.
+ 1 APPPATH\Views\dashboard.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AuthController.php(128): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 09:13:44 --> ErrorException: Undefined array key "membership"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 92.
+ 1 APPPATH\Views\dashboard.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "membership"', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php', 92)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AuthController.php(128): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 09:40:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(143): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('1')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 09:40:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 09:40:36 --> 
+ERROR - 2024-11-10 09:43:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(143): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('1')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 09:43:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 09:43:54 --> 
+ERROR - 2024-11-10 10:01:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(167): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(149): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('1')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:01:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:01:48 --> 
+ERROR - 2024-11-10 10:02:14 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(167): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(149): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('1')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:02:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:02:14 --> 
+ERROR - 2024-11-10 10:03:14 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(167): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(149): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('1')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:03:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:03:14 --> 
+CRITICAL - 2024-11-10 10:15:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:15:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:24:53 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:25:42 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:25:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:27:01 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:30:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:30:36 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67%40gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:35:55 --> ErrorException: Undefined array key "biswassanchaita67@gmail.com"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 87.
+ 1 APPPATH\Views\dashboard.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "biswassanchaita67@gmail.com"', 'C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php', 87)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_new\\htdocs\\codeigniter4\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\AuthController.php(128): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:36:18 --> ParseError: syntax error, unexpected token "@", expecting "]"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 87.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\AuthController.php(128): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:37:34 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67@gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+CRITICAL - 2024-11-10 10:50:15 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "biswassanchaita67@gmail.com"
+[Method: POST, Route: sendReminder/biswassanchaita67@gmail.com]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('sendReminder/biswassanchaita67@gmail.com')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('sendReminder/biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 10:54:29 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:54:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:54:29 --> 
+ERROR - 2024-11-10 10:55:27 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:55:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:55:27 --> 
+ERROR - 2024-11-10 10:57:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:57:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:57:23 --> 
+ERROR - 2024-11-10 10:58:35 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 10:58:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 10:58:35 --> 
+ERROR - 2024-11-10 11:06:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:06:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:06:09 --> 
+ERROR - 2024-11-10 11:22:52 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(206): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:22:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:22:52 --> 
+ERROR - 2024-11-10 11:25:14 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(179): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(155): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:25:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:25:14 --> 
+ERROR - 2024-11-10 11:28:55 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(182): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(158): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:28:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:28:55 --> 
+CRITICAL - 2024-11-10 11:28:55 --> Error: Call to undefined method CodeIgniter\Email\Email::getErrorMessage()
+[Method: POST, Route: sendReminder/biswassanchaita67@gmail.com]
+in APPPATH\Controllers\AuthController.php on line 186.
+ 1 APPPATH\Controllers\AuthController.php(158): App\Controllers\AuthController->sendEmail('biswassanchaita67@gmail.com', 'banchaita')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita67@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_new\\htdocs\\codeigniter4\\public\\index.php')
+ERROR - 2024-11-10 11:29:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(176): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(152): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:29:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:29:42 --> 
+ERROR - 2024-11-10 11:30:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp_new\\ht...', 1896)
+#1 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp_new\htdocs\codeigniter4\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(176): CodeIgniter\Email\Email->send()
+#6 C:\xampp_new\htdocs\codeigniter4\app\Controllers\AuthController.php(152): App\Controllers\AuthController->sendEmail('biswassanchaita...', 'banchaita')
+#7 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(933): App\Controllers\AuthController->sendReminder('biswassanchaita...')
+#8 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\xampp_new\htdocs\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_new\htdocs\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_new\htdocs\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_new\htdocs\codeigniter4\system\rewrite.php(44): require_once('C:\\xampp_new\\ht...')
+#14 {main}
+ERROR - 2024-11-10 11:30:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-10 11:30:25 --> 
